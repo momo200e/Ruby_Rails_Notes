@@ -16,3 +16,22 @@ Gemfile	|設定 Rails 運作時會使用哪些 Gems 套件，用 bundle install 
 README	|讀我檔，一般簡要的說明安裝方法。
 Rakefile	|載入一些 Rake 自動化處理的任務。
 config.ru	|啟動伺服器設定。
+
+#### 我們會常用到的部分有：
+* Gemfile      
+新增／移除／調整gem與其版本
+* config/routes      
+用來設定本專案的子網址會連到哪裡
+* db/      
+資料庫裡各個Class的設定檔
+* app/      
+我們專案裡要做的程式 90%都會放在這裡
+* app/models/      
+放置MVC中的 Model 的地方, 主要做Class歸屬與資料驗證等設定
+* app/views/      
+放置MVC中的 View 的地方, 所有要讓瀏覽器使用者看到的html碼都在這
+* app/controllers/      
+放置MVC中的 Controller 的地方, 所有action動作都在這設定
+* app/assets/      
+裡面有三個資料夾: images, javascripts, stylesheets
+顧名思義就是放置靜態檔案: 圖片, .js, .css檔的地方
