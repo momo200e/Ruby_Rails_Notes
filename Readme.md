@@ -1,4 +1,4 @@
-# ruby_rails_筆記
+# ruby_rails之自己做筆記
 檔案/目錄 | 用途
 -|-
 app|放置 Rails 一些 MVC架構的目錄，底下會有 Controllers、models 和 views 目錄。
