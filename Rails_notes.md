@@ -1,4 +1,4 @@
-# Rails 常用指令
+# Ruby on Rails學習日誌  #Rails 常用指令
 #### 查看ruby版本
  ```ruby
  ruby -v	
