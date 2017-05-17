@@ -26,6 +26,32 @@ gem 'bootstrap-sass'
 *  注意：刪除所有的*= require_self和*= require_tree .語法。Sass中只能使用@import導入文件  
 
 
+
+## Kaminari
+Kaminari是一個分頁的套件
+
+### 在RAILS上的安裝方法
+#### Step.1 Kaminari
+ ```ruby
+# 先在gemfile裡面輸入
+
+gem 'kaminari'
+
+#並在終端機執行bundle install
+ ```
+### 使用方式
+#### Step.1 在controllers/xxxx_controller.rb 中，修改index的方法
+ ```ruby
+def index
+  @books = books.page(params[:page]).per(3)
+end
+ ```
+#### Step.2 在views/xxxx/index.html.erb，畫面中加入分頁
+ ```ruby
+<%= paginate @books  %>
+```
+
+
 ## Awesome_print
 awesome_print是一個可以將Ruby的console輸出排版好看一點的外掛，如果你受不了擠在一起的排版，可以試試看這個套件喔。
 
