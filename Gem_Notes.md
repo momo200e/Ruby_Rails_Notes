@@ -31,7 +31,7 @@ gem 'bootstrap-sass'
 Kaminari是一個分頁的套件
 
 ### 在RAILS上的安裝方法
-#### Step.1 Kaminari
+#### Step.1 加入Kaminari
  ```ruby
 # 先在gemfile裡面輸入
 
@@ -50,6 +50,25 @@ end
  ```ruby
 <%= paginate @books  %>
 ```
+
+
+## Bootstrap-Kaminari-Views
+一個分頁的樣式
+
+### 在RAILS上的安裝方法
+#### Step.1 加入Bootstrap-Kaminari
+ ```ruby
+# 先在gemfile裡面輸入
+
+gem 'bootstrap-kaminari-views'
+
+#並在終端機執行bundle install
+ ```
+### 使用方式
+#### 修改分頁的語法
+ ```ruby
+<%= paginate @namecards ,:theme => 'twitter-bootstrap-3' %>
+ ```
 
 
 ## Awesome_print
