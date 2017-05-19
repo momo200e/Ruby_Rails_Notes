@@ -43,7 +43,7 @@ gem 'kaminari'
 #### Step.1 在controllers/xxxx_controller.rb 中，修改index的方法
  ```ruby
 def index
-  @books = books.page(params[:page]).per(3)
+  @books = Book.page(params[:page]).per(3)
 end
  ```
 #### Step.2 在views/xxxx/index.html.erb，畫面中加入分頁
