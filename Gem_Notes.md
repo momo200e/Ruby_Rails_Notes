@@ -1,6 +1,7 @@
 # Ruby on Rails學習日誌 #一些好用的Gem
-- [Bootstrap-sass](https://github.com/momo200e/Ruby_Rails_Notes/blob/master/Gem_Notes.md#bootstrap)
-- [Kaminari-分頁](https://github.com/momo200e/Ruby_Rails_Notes/blob/master/Gem_Notes.md#kaminari)
+- [Bootstrap-sass](#bootstrap)
+- [Simple_form](#simple_form)
+- [Kaminari-分頁](#kaminari)
 - [Bootstrap-Kaminari-Views-分頁樣式](#bootstrap-kaminari-views)
 - [Awesome_print](#awesome_print)
 
