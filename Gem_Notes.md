@@ -1,4 +1,8 @@
 # Ruby on Rails學習日誌 #一些好用的Gem
+- [Bootstrap](https://github.com/momo200e/Ruby_Rails_Notes/blob/master/Gem_Notes.md#bootstrap)
+- [Kaminari-分頁](https://github.com/momo200e/Ruby_Rails_Notes/blob/master/Gem_Notes.md#kaminari)
+- [Bootstrap-Kaminari-Views-分頁樣式](#bootstrap-kaminari-views)
+- [Awesome_print](#awesome_print)
 
 ## Bootstrap
 Bootstrap是一個網頁樣式框架，提供許多CSS樣式功能強化網頁前端的表現能力
