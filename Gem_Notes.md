@@ -1,5 +1,5 @@
 # Ruby on Rails學習日誌 #一些好用的Gem
-- [Bootstrap-sass](##bootstrap-sass)
+- [Bootstrap-sass](#bootstrap-sass)
 - [Simple_form](#simple_form)
 - [Kaminari-分頁](#kaminari)
 - [Bootstrap-Kaminari-Views-分頁樣式](#bootstrap-kaminari-views)
