@@ -1,10 +1,10 @@
 # Ruby on Rails學習日誌 #一些好用的Gem
-- [Bootstrap](https://github.com/momo200e/Ruby_Rails_Notes/blob/master/Gem_Notes.md#bootstrap)
+- [Bootstrap-sass](https://github.com/momo200e/Ruby_Rails_Notes/blob/master/Gem_Notes.md#bootstrap)
 - [Kaminari-分頁](https://github.com/momo200e/Ruby_Rails_Notes/blob/master/Gem_Notes.md#kaminari)
 - [Bootstrap-Kaminari-Views-分頁樣式](#bootstrap-kaminari-views)
 - [Awesome_print](#awesome_print)
 
-## Bootstrap
+## Bootstrap-sass
 Bootstrap是一個網頁樣式框架，提供許多CSS樣式功能強化網頁前端的表現能力
 
 ### 在RAILS上的安裝方法
@@ -29,7 +29,28 @@ gem 'bootstrap-sass'
  ```
 *  注意：刪除所有的*= require_self和*= require_tree .語法。Sass中只能使用@import導入文件  
 
+## Simple_form
+Simple_form是一個表單快速生成框架，搭配bootstrap非常的強大XD
 
+### 在RAILS上的安裝方法
+#### Step.1 加入Simple_form
+ ```ruby
+# 先在gemfile裡面輸入
+
+gem 'simple_form'
+ ```
+ 並在終端機執行`bundle install`
+ 
+#### Step.2 安裝生成Simple_form
+##### 正常情況
+```ruby
+rails generate simple_form:install
+ ```
+ 
+##### 使用bootstrap
+```ruby
+rails generate simple_form:install --bootstrap
+ ```
 
 ## Kaminari
 Kaminari是一個分頁的套件
