@@ -1,7 +1,7 @@
 # Ruby on Rails學習日誌 #一些好用的Gem
 - [Bootstrap-sass](#bootstrap-sass)
 - [Simple_form](#simple_form)
-- [Devise使用者功能(會員機制)](#Devise)
+- [Devise使用者功能(會員機制)](#devise會員機制)
 - [Kaminari-分頁](#kaminari)
 - [Bootstrap-Kaminari-Views-分頁樣式](#bootstrap-kaminari-views)
 - [Awesome_print](#awesome_print)
