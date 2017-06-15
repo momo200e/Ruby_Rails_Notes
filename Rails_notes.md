@@ -1,4 +1,20 @@
 # Ruby on Rails學習日誌  #Rails 常用指令
+### Git常用語法
+
+#### git pull 強制覆蓋本地修改
+
+**操作**
+
+清除本地修改
+```git
+git reset --hard
+ ```
+
+拉下來
+```git
+git pull
+ ```
+
 #### 查看ruby版本
  ```ruby
  ruby -v	
