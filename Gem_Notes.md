@@ -1,6 +1,7 @@
 # Ruby on Rails學習日誌 #一些好用的Gem
 - [Bootstrap-sass](#bootstrap-sass)
 - [Simple_form](#simple_form)
+- [Devise使用者功能(會員機制)](#Devise)
 - [Kaminari-分頁](#kaminari)
 - [Bootstrap-Kaminari-Views-分頁樣式](#bootstrap-kaminari-views)
 - [Awesome_print](#awesome_print)
@@ -52,6 +53,34 @@ rails generate simple_form:install
 ```ruby
 rails generate simple_form:install --bootstrap
  ```
+
+
+
+## Devise會員機制
+有了Devise，實作使用者機制變成一件再容易不過的事
+
+### 在RAILS上的安裝方法
+#### Step.1 加入Bootstrap
+ ```ruby
+# Gemfile
+gem 'devise'
+ ```
+並在終端機執行`bundle install`
+#### Step.2 設定 Devise
+ ```ruby
+rails g devise:install
+ ```
+#### Step.3 建立使用者
+```ruby
+rails g devise user
+ ```
+ Devise非常的聰明，在這邊幫我們建立了model當作會員資料表，幫我們把相關設定都做好了，只需要一行指令 =V=
+ (名稱當然不用是`user`)
+ 
+ 記得執行`rails db:migrate`，再重啟server
+
+#### Step.4 Devise的應用-routes
+
 
 ## Kaminari
 Kaminari是一個分頁的套件
