@@ -2,6 +2,7 @@
 - [Bootstrap-sass](#bootstrap-sass)
 - [Simple_form](#simple_form)
 - [Devise使用者功能(會員機制)](#devise會員機制)
+- [Cancancan](#cancancan)
 - [Kaminari-分頁](#kaminari)
 - [Bootstrap-Kaminari-Views-分頁樣式](#bootstrap-kaminari-views)
 - [Awesome_print](#awesome_print)
@@ -49,7 +50,7 @@ gem 'simple_form'
 rails generate simple_form:install
  ```
  
-##### 使用bootstrap
+##### 當有使用bootstrap
 ```ruby
 rails generate simple_form:install --bootstrap
  ```
@@ -80,6 +81,39 @@ rails g devise user
  記得執行`rails db:migrate`，再重啟server
 
 #### Step.4 Devise的應用-routes
+
+
+
+## Cancancan
+Cancancan是一個角色管理權限的套件，配合Devise一起使用可以快速的長出完整的會員管理機制
+
+### 在RAILS上的安裝方法
+#### Step.1 加入Bootstrap
+ ```ruby
+# 先在gemfile裡面輸入
+gem 'cancancan', '~> 1.10'
+ ```
+並在終端機執行`bundle install`
+#### Step.2 加入專案
+接下來執行`rails g cancan:ability`，你就會得到一個`aibility.rb`
+
+**全部的權限都可以放在裡面太方便啦~~~~ OAO**
+
+
+#### Step.3 cancancan的應用
+  ```ruby
+# aibility.rb
+user ||= User.new
+if user.staff?
+ can :manage, :all
+else
+ can :read, :all
+end
+```
+其中`can :manage, :all`意思是此使用者，擁有所有資料的變更權限
+
+`can :read, :all`意思是此使用者，只能讀資料
+
 
 
 ## Kaminari
