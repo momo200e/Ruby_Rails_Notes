@@ -1,5 +1,6 @@
 # Ruby on Rails學習日誌 #一些好用的Gem
 - [Bootstrap-sass](#bootstrap-sass)
+    - [畫面美化(常用class)](#)
 - [Simple_form](#simple_form)
 - [Devise使用者功能(會員機制)](#devise會員機制)
 - [Cancancan](#cancancan)
@@ -31,6 +32,58 @@ gem 'bootstrap-sass'
 @import "bootstrap";
  ```
 *  注意：刪除所有的*= require_self和*= require_tree .語法。Sass中只能使用@import導入文件  
+
+### 畫面美化
+**畫面內容**
+```ruby
+#layouts/application.html.erb
+<div class="container">
+<%= yield %>  
+</div>
+```
+用`<div class="container">`包著內文
+
+**表格美化**
+表格標籤加上`class="table"`
+```ruby
+#student/index.html.erb
+<h1>成績列表</h1>
+
+<%= link_to '新增學生', new_student_path, class:"btn btn-success"  %>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>姓名</th>
+      <th>學號</th>
+      <th>分數</th>
+      <th>處理</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= student.name %></td>
+        <td><%= student.student_id %></td>
+        <td><%= student.grade %></td>
+        <td><%= link_to '編輯', edit_student_path(student), class:"btn btn-primary"  %></td>
+        <td><%= link_to '刪除', student, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+```
+**按鈕美化**
+- 綠色按鈕加上`class:"btn btn-success"`
+- 藍色按鈕加上`class:"btn btn-primary"`
+- 紅色按鈕加上`class:"btn btn-danger"`
+
 
 ## Simple_form
 Simple_form是一個表單快速生成框架，搭配bootstrap非常的強大XD
