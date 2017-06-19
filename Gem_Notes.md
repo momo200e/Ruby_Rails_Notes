@@ -1,6 +1,6 @@
 # Ruby on Rails學習日誌 #一些好用的Gem
 - [Bootstrap-sass](#bootstrap-sass)
-    - [畫面美化(常用class)](#)
+    - [畫面美化(常用class)](#畫面美化)
 - [Simple_form](#simple_form)
 - [Devise使用者功能(會員機制)](#devise會員機制)
 - [Cancancan](#cancancan)
